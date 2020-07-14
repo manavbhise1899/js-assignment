@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h2>Difference between Var , Constant and Let </h2>
+  <h4>Var</h4>
+  <p>The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global. var is “function scoped”.
+  <h4>Let</h4>
+  <p>The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} . “let” and “const” are“block scoped”.</p>
+  <h4>Constant</h4>
+  <p>The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned. “const” cannot be re-assigned to a new value. However it CAN be mutated.</p>
+  <h4>Inspect Console for example</h4>
+  <script type="text/JavaScript">
+  // var
+    var game = "Cricket"
+    console.log(game);
+  //Let
+  {
+      game = "Hockey"
+      console.log("Using Let",game);     
+  }
+  //constant
+    const countries = ["India","Russia","Iran","Canada"]
+    console.log(countries);
+
+  </script>
+</body>
+
+</html>
