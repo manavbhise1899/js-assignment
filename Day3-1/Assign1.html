@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h2>Console Functions</h2>
+
+  <h4>console.log</h4>
+  <p>Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.</p>
+  <h4>console.error</h4>
+  <p>Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.</p>
+  <h4>console.table</h4>
+  <p>This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table</p>
+  <h4>console.warn</h4>
+  <p>Used to log warning message to the console. By default the warning message will be highlighted with yellow color.</p>
+  <h4>console.count</h4>
+  <p>This method is used to count the number that the function hit by this counting method</p>
+  <script type="text/javascript">
+    console.log('abc');  
+    console.error('error displayed');  
+    console.table({'A':1, 'B':2,'C':3}); 
+    console.warn('Warn displayed');
+    for(let i=0;i<5;i++){ 
+    console.count(i); 
+    }
+    for(let i=0;i<5;i++){ 
+    console.count(i); 
+    } 
+  </script>
+</body>
+
+</html>
