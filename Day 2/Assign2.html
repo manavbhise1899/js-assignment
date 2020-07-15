@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h2>Array Methods</h2>
+  <h4>toString()</h4>
+  <p>The JavaScript method toString() converts an array to a string of (comma separated) array values.</p>
+  <h4>slice()</h4>
+  <p>The slice() method returns the selected elements in an array, as a new array object.
+    The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.</p>
+  <h4>concat()</h4>
+  <p>The concat() method is used to join two or more arrays.
+    This method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.</p>
+  <h4>push()</h4>
+  <p>The push() method adds new items to the end of an array, and returns the new length.</p>
+  <h4>pop()</h4>
+  <p>The pop() method removes the last element from an array</p>
+  <h4>fil()</h4>
+  <p>The fill() method fills the specified elements in an array with a static value.
+    You can specify the position of where to start and end the filling. If not specified, all elements will be filled.</p>
+  <h4>keys()</h4>
+  <p>The keys() method returns an Array Iterator object with the keys of an array.</p>
+  <h4>sort()</h4>
+  <p>The sort() method sorts the items of an array.
+    The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down).
+    By default, the sort() method sorts the values as strings in alphabetical and ascending order.</p>
+  <h4>join()</h4>
+  <p>The join() method returns the array as a string.
+    The elements will be separated by a specified separator. The default separator is comma (,).</p>
+    
+    <h2>String Methods</h2>  
+    
+  <h4>indexOf()</h4>
+  <p>The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string.</p>
+  <h4>lastIndexOf()()</h4>
+  <p>The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.</p>
+  <h4>search()</h4>
+  <p>The search() method searches a string for a specified value and returns the position of the match</p>
+  <h4>substring()</h4>
+  <p>substring() is similar to slice().
+    The difference is that substring() cannot accept negative indexes</p>
+  <h4>replace()</h4>
+  <p>The replace() method replaces a specified value with another value in a string</p>
+  <h4>toUpperCase()</h4>
+  <p>A string is converted to upper case with toUpperCase()</p>
+  <h4>toLowerCase()</h4>
+  <p>A string is converted to lower case with toLowerCase()</p>
+  <h4>concat()</h4>
+  <p>The concat() method can be used instead of the plus operator. These two lines do the same</p>
+  <script type="text/javascript">
+    console.log('Array Methods')
+    let arr1 = ['India','Russia','Iran','Bhutan'];
+    let arr2 = ['Spain','Peru','Hungary','UAE'];
+    let arr3 = [1,2,3,4,5];
+    console.log(arr2.toString());
+    console.log(arr3.length);
+    console.log(arr1.slice(1));
+    console.log(arr2.slice(1,3));
+    console.log(arr2.concat('ShriLanka'));
+    console.log(arr2.concat(arr1));
+    console.log(arr2.push('UK'));
+    console.log(arr2);
+    console.log(arr3.pop());
+    console.log(arr3);
+    console.log(arr3.fill(5));
+    var vegetables = ["Tomato", "Potato", "Brinjol", "Ladyfinger"];
+    var count = vegetables.keys();
+    for(x of count){
+        console.log(x)
+    }
+    console.log(arr2.sort());
+    console.log(arr1.join("*"));
+    
+    console.log('String Methods')
+    let str1 = 'hey this is sample is string';
+
+    console.log(str1.indexOf('string'));
+    console.log(str1.lastIndexOf('is'));
+    console.log(str1.search('string'));
+    console.log(str1.substring(7, 13));
+    console.log(str1.replace("Hey", "Hi"));
+    console.log(str1.toUpperCase());
+    console.log(str1.toLowerCase());
+
+    let str2 = "Manav";
+    let str3 = "Bhise";
+    console.log(str2.concat(" ", str3));
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
