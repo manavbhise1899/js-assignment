@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Marks Grades using Conditional Statement</h4>
+    <h4>Marks Grades using Switch Cases</h4>
+    <p>Inspect console for result</p>
+
+    <script type="text/javascript">
+
+let marks= parseInt(prompt("Enter the Marks to check using Conditional Statement"));  
+        console.log(marks);
+        if(marks>100)
+             console.log("Enter Valid Marks");
+        else if(marks>=85 & marks<=100)
+             console.log(`Marks are ${marks} and Grade is A`);
+        else if(marks<85 & marks>=75)
+             console.log(`Marks are ${marks} and Grade is B`);
+        else if(marks<75 & marks>=65)
+             console.log(`Marks are ${marks} and Grade is C`);
+        else if(marks<65 & marks>=55)
+             console.log(`Marks are ${marks} and Grade is D`);
+        else if(marks<55 & marks>=45)
+              console.log(`Marks are ${marks} and Grade is E`);
+        else if(marks<45 & marks<=45)
+              console.log(`Marks are ${marks} and Grade is F`);
+        else if(marks<0)
+              console.log("Enter Valid Marks");
+        
+
+    let marks1= parseInt(prompt("Enter the Marks to check using switch case"));
+        console.log(marks1);
+
+        switch (true){
+        case marks1<60:
+        console.log(`Marks are ${marks1} and Grade is F`);
+        break;
+        
+        case marks1<70:
+        console.log(`Marks are ${marks1} and Grade is D`);
+        break;
+
+        case marks1<80:
+        console.log(`Marks are ${marks1} and Grade is C`);
+        break;
+
+        case marks1<90:
+        console.log(`Marks are ${marks1} and Grade is B`);
+        break;
+        
+        case marks1<=100:
+        console.log(`Marks are ${marks1} and Grade is A`);
+        break;
+        default:
+        console.log("Enter Valid Marks")
+}
+
+
+    </script>
+</body>
+</html>
