@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsUpgrade Java Script Day 4 Assignment</title>
+   
+    <body>
+      <h2> Assignment 6</h2>
+    <h4> Greater than 100  </h4>
+
+  
+      <button type="button" name="button" class="six">click for answer</button>
+      <hr>
+    <script>
+
+  console.log("GREATER THAN 100")
+
+  function askNum(){
+  let input = parseInt(prompt("Enter a Number: "));
+  return (isNaN(input) || input <= 100) ? askNum() : console.log(`Number Entered: ${input}, is greater than 100.`);
+  }
+  document.querySelector(".six").addEventListener("click", askNum);
+</script>
+
+</body>
+</html>
