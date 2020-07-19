@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Assignment 7</h2>
+    <h4>Prime Number Program</h4>
+    <script>
+        let n = +prompt("Enter the value of n\nwhich will display prime numbers\nfrom 2 to n interval",10);
+        console.log(`Printing prime from 2 to ${n}`);
+        checknextprime:
+        for(let i=2;i<=n;i++)
+        {
+            for(let j=2;j<i;j++)
+            {
+                if(i%j==0)
+                continue checknextprime;
+            }
+            alert(i);
+            console.log(`${i} is a prime number`,);
+        }
+        
+    </script>
+</body>
+</html>
