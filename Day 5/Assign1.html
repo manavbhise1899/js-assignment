@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        numberof = Math.abs(prompt("Enter the number you want the array till"));
+        console.log(numberof);
+        oprarr = [];
+        for(let i=0;i<numberof;i++)
+        {
+            oprarr[i] = i+1; 
+        }
+        console.log(oprarr);
+        let filoddnumb = oprarr.filter(el=>el%2!=0);
+        console.log(filoddnumb);
+         let mapcubes = filoddnumb.map(el=>Math.pow(el,3))
+         console.log(mapcubes);
+    </script>
+</body>
+</html>
