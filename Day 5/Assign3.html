@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Question 3:</h3>
+    <h4>Using promises/async await/fetch get the random todos from the json placeholder api.
+        <br> And log all the completed todos to the console.
+        <br> API Endpoint : <a
+            href="​https://jsonplaceholder.typicode.com/todos">​https://jsonplaceholder.typicode.com/todos</a> </h4>
+    <button type="button" name="button" class="three">click for answer</button>
+    <script>
+        function fapi(){
+        var rand = parseInt(Math.random()*200+1);
+        fetch(`https://jsonplaceholder.typicode.com/todos/${rand}`)
+        .then(response=>response.json())
+         .then(data=>console.log(data))
+         
+}
+document.querySelector(".three").addEventListener("click", fapi);
+    </script>
+</body>
+</html>
