@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .darkmode 
+    {
+    background-color: black;
+    color: white;
+    }
+    </style>
+</head>
+<body>
+    <h1>Javascript Assginment</h1>
+    <h4 id="demo"></h4>
+    <h5 id = "time"></h5>
+    <button onclick="darkmode()">Switch to DarkMode</button>
+    <script>
+        let name = prompt("Enter your Name");
+        const getid = document.getElementById('demo');
+        getid.innerHTML = `Hey ${name} welcome to the web page`;
+
+        const getclockid = document.getElementById('time');
+        function displayClock()
+        {
+            let date = new Date();
+            let time = date.toLocaleTimeString();
+            getclockid.innerHTML = `The time is ${time}`;
+        }
+        setInterval(displayClock,1000);
+
+        function darkmode()
+        {
+            changebody = document.body;
+            changebody.classList.toggle("darkmode");
+        }
+    </script>
+</body>
+</html>
