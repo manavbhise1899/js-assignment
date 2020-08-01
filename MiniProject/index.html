@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <section class="todo-outer">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-8">
+                <h2 style="text-align:center;">ToDo Application</h2>
+              <div class="todo-inner">
+                <div class="form-row">
+                  <div class="col-8 mr-sm-2">
+                    <input type="text" class="form-control" placeholder="Enter your task" id="taskinput" />
+                    <input type="hidden" id="saveindex">
+                  </div>
+                  <button type="button" class="btn btn-success mr-sm-2" id="addbtn" style="background-color:yellow; color: black;">
+                    Add To List
+                  </button>
+                  <button type="button" class="btn btn-success mr-sm-2" id="savebtn" style="display: none;background-color:yellow; color: black;">
+                    Save
+                  </button>
+                  <button type="button" id="clearButton" class="btn btn-danger" style="background-color:black">
+                    Clear List  
+                  </button>
+                </div>
+                <div class="to-do-output">
+                  <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                    
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="js/main.js"></script>
+</body>
+</html> 
